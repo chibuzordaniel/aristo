@@ -24,11 +24,11 @@ const Aristonav = () => {
 
                         <div className=" flex gap-10  mt-8 font-Sora ">
                             <div className="   bg-white button1 relative w-[164px] h-[61px] ">
-                               <button className=" button3 text-white  absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
+                               <button className=" button3 text-white text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
                             </div>
                             
                             <div className=" bg-[#FBAF00]   button2 relative w-[164px] h-[61px] ">
-                               <button className=" button4 absolute bottom-2  right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
+                               <button className=" button4 absolute bottom-2  text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
                             </div>
                         </div> 
                   </div>
