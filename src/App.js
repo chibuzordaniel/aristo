@@ -1,5 +1,6 @@
 
 import './App.css';
+import Artistoart from './components/Aristoart';
 import Aristonav from './components/Aristonav';
 import Aristoshowcase from './components/Aristoshowcase';
 
@@ -8,6 +9,7 @@ function App() {
     <>
      <Aristonav/>
      <Aristoshowcase/>
+     <Artistoart/>
     </>
   );
 }

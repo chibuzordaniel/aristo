@@ -3,7 +3,7 @@
 const Aristonav = () => {
    
     return(
-        <div>
+        <div className="  bg-[#110C00] w-full h-28 fixed top-0 z-10">
             <div className=" max-w-[1200px] mx-auto">
                 <div className=" flex justify-between">
 
@@ -24,11 +24,11 @@ const Aristonav = () => {
 
                         <div className=" flex gap-10  mt-8 font-Sora ">
                             <div className="   bg-white button1 relative w-[164px] h-[61px] ">
-                               <button className=" button3 text-white text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
+                               <button className=" button3 text-white outline-none border-none text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
                             </div>
                             
                             <div className=" bg-[#FBAF00]   button2 relative w-[164px] h-[61px] ">
-                               <button className=" button4 absolute bottom-2  text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
+                               <button className=" button4 absolute bottom-2  outline-none border-none text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
                             </div>
                         </div> 
                   </div>

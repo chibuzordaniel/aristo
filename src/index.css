@@ -68,4 +68,35 @@ code {
   color: black;
 }
 
+.img1{
+  border-radius: 20px 200px;
+}
+
+.card{
+  border-top-left-radius: 200px ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  width: 370px;
+  height: 300px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.card2{
+  border-top-left-radius: 200px  ;
+  border-bottom-right-radius: 200px  ;
+  width: 370px;
+  height: 530px;
+  margin-bottom: 50px;
+  background:#1A1405;
+}
+
+
+.art2{
+  border-radius:  20px  200px ;
+}
+
+
+
 
