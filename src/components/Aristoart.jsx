@@ -1,13 +1,23 @@
-
+import React from 'react'
+import {NavLink} from 'react-router-dom';
 import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
+import  img4 from '../assests/andres-herrera-DJPLYpriawI-unsplash 1.png'
+import  img5 from '../assests/auguste-a-cGdVCfWpNZU-unsplash 1.png'
+import  img6 from '../assests/mika-y-RjWd6Ol7A-unsplash 1.png'
+import  img7 from '../assests/olenka-varzar-ot5bYzjWksE-unsplash 1.png'
+import  img8 from '../assests/Group 7.png'
+import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
+
+
+
 
 
 
 const Artistoart = () => {
 
     return(
-        <div>
-            <div className="max-w-[1200px] mx-auto">
+        <div >
+            <div className="max-w-[1200px] mx-auto ">
                 <div>
                     <div className=" flex justify-between text-white mt-[89px]">
 
@@ -38,51 +48,78 @@ const Artistoart = () => {
                 </div>
 
 
-                <div className=' mt-20  grid grid-cols-3 justify-between'>
+                <div className=' mt-20  grid grid-cols-3 justify-between  gap-7'>
 
                    <div className=" card2  text-white   bg-white  ">
-                        <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
+                    <NavLink to='' >
+                            <img className='  card ' src={img4} alt="" />
+                            <div className=' pl-5 pt-5  font-Sora'>
+                                <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
+                                <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                                <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
+                            </div>
+                      </NavLink>
+                    </div>
+
+                    <div className=" card2  text-white   bg-white  ">
+                        <img className='card ' src={img5} alt="" />
+                        <div className=' pl-5 pt-5 font-Sora '>
+                            <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
+                            <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                            <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div className=" card2  text-white   bg-white  ">
+                        <img className='  card ' src={img6} alt="" />
+                        <div className=' pl-5 pt-5 font-Sora  '>
+                            <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
+                            <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                            <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div className=" card2  text-white   bg-white  ">
+                        <img className='  card ' src={img7} alt="" />
+                        <div className=' pl-5 pt-5  font-Sora '>
+                            <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
+                            <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                            <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                         </div>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
                         <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
+                        <div className=' pl-5 pt-5 font-Sora  '>
+                            <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
+                            <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                            <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                         </div>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                        <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
-                        </div>
-                    </div>
-
-                    <div className=" card2  text-white   bg-white  ">
-                        <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
-                        </div>
-                    </div>
-
-                    <div className=" card2  text-white   bg-white  ">
-                        <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
-                        </div>
-                    </div>
-
-                    <div className=" card2  text-white   bg-white  ">
-                        <img className='  card ' src={img1} alt="" />
-                        <div className=' '>
-                        <h1>Plastic Hears Sculpture</h1>
+                        <img className='  card ' src={img5} alt="" />
+                        <div className=' pl-5 pt-5 font-Sora  '>
+                            <h1 className=' text-[24px]'> Plastic Hears Sculpture</h1>
+                            <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
+                            <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                         </div>
                     </div>
                 </div> 
+            </div>
 
+
+            <div className='flex justify-center'>
+              
+                <div className=" bg-[#FBAF00] mt-[211px]     font-Sora  button2 relative w-[245px] h-[78px] ">
+                    <button className=" button4 absolute bottom-3 outline-none  border-none  text-xl right-3  bg-white  w-[245px] h-[75px]"><HiOutlineArrowNarrowRight className=' absolute left-[200px] top-7  text-2xl'/>Explore arts</button>
+                   
+                </div>
+            </div>
+
+            <div>
+            
+                <img className='  -mt-[510px]' src={img8} alt="" />
             </div>
         </div>
     )
