@@ -1,21 +1,28 @@
 import React from 'react';
 import './App.css';
-import {Route, Routes} from 'react-router-dom'
-// import Artistoart from './components/Aristoart';
-// import Aristonav from './components/Aristonav';
-import Artistoplasticnav from './components/Aristoplasticnav';
-// import Aristoshowcase from './components/Aristoshowcase';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Aristonav from './components/Aristonav';
+import Home from './pages/Home';
+import Share from './pages/Share'
+
+
+
+
 
 
 function App() {
   return (
-    <>
-     {/* <Aristonav/> */}
-     {/* <Aristoshowcase/> */}
-     {/* <Artistoart/> */}
-     <Artistoplasticnav/>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' exact={true} element={<Aristonav />} />
+        <Route path='/Aristonav' exact={true} element={<Aristonav />} />
+        <Route path='/art' exact={true} element={<Home />}/>
+        <Route path='/share' exact={true} element={<Share />}/>
+      </Routes>
+    </Router>
+    
   );
 }
 
 export default App;
+

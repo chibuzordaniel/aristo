@@ -2,10 +2,12 @@
 import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
 import  img2 from  '../assests/Frame 12.png'
 import  img3 from  '../assests/Group 8.png'
+// import  Art from '../components/Art';
 
 
 
-const Aristoshowcase = () => {
+
+const Showcase = () => {
    
     return(
 
@@ -39,14 +41,17 @@ const Aristoshowcase = () => {
             </div>
 
           
-
             <div>
                 <span  className=' flex justify-end'>
                    <img className=' -mt-[970px]' src={img3} alt="" />
                 </span>
             </div>
+
+
+          
+            {/* <Art/> */}
         </div>
     )
 }
 
-export default Aristoshowcase;
+export default Showcase;
