@@ -6,10 +6,6 @@ import Home from './pages/Home';
 import Share from './pages/Share'
 
 
-
-
-
-
 function App() {
   return (
     <Router>
@@ -20,6 +16,7 @@ function App() {
         <Route path='/share' exact={true} element={<Share />}/>
       </Routes>
     </Router>
+    
     
   );
 }

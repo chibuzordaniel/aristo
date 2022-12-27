@@ -1,5 +1,4 @@
 import Showcase  from "./Showcase";
-import  Art from './Art';
 
 
 
@@ -45,7 +44,6 @@ const Aristonav = () => {
          
         </div>
          <Showcase/>
-         <Art/>
         </div>
     )
 }

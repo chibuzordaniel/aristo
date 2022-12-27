@@ -2,7 +2,9 @@
 import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
 import  img2 from  '../assests/Frame 12.png'
 import  img3 from  '../assests/Group 8.png'
-// import  Art from '../components/Art';
+import  Art from '../components/Art';
+// import  Art from './Art';
+
 
 
 
@@ -49,7 +51,7 @@ const Showcase = () => {
 
 
           
-            {/* <Art/> */}
+            <Art/>
         </div>
     )
 }
