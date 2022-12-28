@@ -2,19 +2,14 @@
 import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
 import  img2 from  '../assests/Frame 12.png'
 import  img3 from  '../assests/Group 8.png'
-import  Art from '../components/Art';
-// import  Art from './Art';
-
-
-
 
 
 const Showcase = () => {
    
     return(
 
-        <div className=" ">
-           <div className='  max-w-[1200px] mx-auto mt-[240px]'>
+        <div className=" bg-[#110C00] ">
+           <div className='  max-w-[1200px] mx-auto pt-[240px]'>
                 <div className=' flex justify-between'>
                     <div>
                         <h1 className=" font-Sora text-[60px] leading-[72px] text-white">Discover amazing <br /> art around the <br /> <span className=" text-[#FBAF00]">world</span> </h1>
@@ -48,10 +43,6 @@ const Showcase = () => {
                    <img className=' -mt-[970px]' src={img3} alt="" />
                 </span>
             </div>
-
-
-          
-            <Art/>
         </div>
     )
 }

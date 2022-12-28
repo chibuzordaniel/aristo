@@ -1,4 +1,4 @@
-import Showcase  from "./Showcase";
+
 
 
 
@@ -9,7 +9,7 @@ const Aristonav = () => {
    
     return(
         <div>
-        <div className="  bg-[#110C00] w-full h-28 fixed top-0 z-10">
+        <div className="  bg-[#110C00] w-full h-28 fixed top-0 z-10 ">
             <div className=" max-w-[1200px] mx-auto">
                 <div className=" flex justify-between">
 
@@ -43,7 +43,7 @@ const Aristonav = () => {
            
          
         </div>
-         <Showcase/>
+        
         </div>
     )
 }

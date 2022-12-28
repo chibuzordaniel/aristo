@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
 import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
 import  img4 from '../assests/andres-herrera-DJPLYpriawI-unsplash 1.png'
 import  img5 from '../assests/auguste-a-cGdVCfWpNZU-unsplash 1.png'
@@ -7,6 +6,7 @@ import  img6 from '../assests/mika-y-RjWd6Ol7A-unsplash 1.png'
 import  img7 from '../assests/olenka-varzar-ot5bYzjWksE-unsplash 1.png'
 import  img8 from '../assests/Group 7.png'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
+import { Link } from 'react-router-dom'
 
 
 
@@ -16,10 +16,10 @@ import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 const Art = () => {
 
     return(
-        <div >
+        <div  className=' bg-[#110C00]'>
             <div className="max-w-[1200px] mx-auto ">
                 <div>
-                    <div className=" flex justify-between text-white mt-[89px]">
+                    <div className=" flex justify-between text-white pt-[89px]">
 
                       <div>
                             <h1 className=" text-[40px] font-Sora ">Art in the collection</h1>
@@ -53,69 +53,68 @@ const Art = () => {
                 <div className=' mt-20  grid grid-cols-3 justify-between  gap-7'>
 
                    <div className=" card2  text-white   bg-white  ">
-                    <Link to='/art' >
+                       <Link to='Home'>
                             <img className='  card ' src={img4} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                       </Link>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                    <Link to='/art' >
+                 
                             <img className='  card ' src={img5} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                      
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                    <Link to='/art' >
+                    
                             <img className='  card ' src={img6} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                      
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                    <Link to='/art' >
                             <img className='  card ' src={img7} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                      
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                    <Link to='/art' >
+                     
                             <img className='  card ' src={img1} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                      
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                        <Link to='/art' >
+                         
                             <img className='  card ' src={img5} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      </Link>
+                      
                     </div>
                 </div> 
             </div>
