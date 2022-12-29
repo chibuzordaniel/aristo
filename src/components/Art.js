@@ -64,57 +64,58 @@ const Art = () => {
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                 
+                        <Link to='Home'>
                             <img className='  card ' src={img5} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      
+                        </Link>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                    
+                        <Link to='Home'>
                             <img className='  card ' src={img6} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      
+                       </Link>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
+                        <Link to='Home'>
                             <img className='  card ' src={img7} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      
+                       </Link>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                     
+                        <Link to='Home'>
                             <img className='  card ' src={img1} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      
+                        </Link>
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                         
+                        <Link to='Hone'>
                             <img className='  card ' src={img5} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
                                 <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
                                 <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
                             </div>
-                      
+                       </Link> 
                     </div>
                 </div> 
             </div>

@@ -10,7 +10,7 @@ const Home = () => {
     
     return(
         <div className=' bg-[#110C00] h-[100%] pb-[130px]'>
-             <svg width="1001" height="1018" viewBox="0 0 1001 945" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="1001" height="1018" viewBox="0 0 1001 945" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_18_25)">
                 <circle cx="187" cy="814" r="241" fill="#FBAF00"/>
                 </g>
@@ -21,18 +21,18 @@ const Home = () => {
                 <feGaussianBlur stdDeviation="286.099" result="effect1_foregroundBlur_18_25"/>
                 </filter>
                 </defs>
-                </svg>
+            </svg>
             <Aristonav/>
             <div className=' max-w-[1200px] mx-auto '>
                 <div className=' mt-[-800px]'>
                 <div className=' flex justify-between'>
     
                     <div>
-                     <Link to='/'> <HiOutlineArrowNarrowLeft className=' text-white text-[35px]'/></Link>
+                      <Link to='/'> <HiOutlineArrowNarrowLeft className=' text-white text-[35px]'/></Link>
                     </div>
 
                     <div>
-                     < HiOutlineShare className=' text-white text-[35px]'/>
+                      < HiOutlineShare className=' text-white text-[35px]'/>
                     </div>
             
                 </div>
@@ -56,8 +56,6 @@ const Home = () => {
                             </div>
                        </div>
                     </div>
-
-
                 </div>
                 </div>
           </div>
