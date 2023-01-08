@@ -9,22 +9,11 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     
     return(
-        <div className=' bg-[#110C00] h-[100%] pb-[130px]'>
-            <svg width="1001" height="1018" viewBox="0 0 1001 945" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_f_18_25)">
-                <circle cx="187" cy="814" r="241" fill="#FBAF00"/>
-                </g>
-                <defs>
-                <filter id="filter0_f_18_25" x="-626.199" y="0.801147" width="1626.4" height="1626.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                <feGaussianBlur stdDeviation="286.099" result="effect1_foregroundBlur_18_25"/>
-                </filter>
-                </defs>
-            </svg>
+        <div className=' gradient h-[100%] pb-[48px]'>
+           
             <Aristonav/>
             <div className=' max-w-[1200px] mx-auto '>
-                <div className=' mt-[-800px]'>
+                <div className=' pt-[300px]'>
                 <div className=' flex justify-between'>
     
                     <div>
@@ -39,7 +28,7 @@ const Home = () => {
 
                 <div className=' flex gap-[54px] mt-[57px]'>
                     <div>
-                        <img className='card8' src={img1} alt="" />
+                        <img className='card8 ' src={img1} alt="" />
                     </div>
 
                     <div>
