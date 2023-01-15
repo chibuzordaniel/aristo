@@ -41,7 +41,6 @@ const Aristonav = () => {
                </div>
             </div> 
            
-         
         </div>
         
         </div>
