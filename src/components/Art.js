@@ -108,7 +108,7 @@ const Art = () => {
                     </div>
 
                     <div className=" card2  text-white   bg-white  ">
-                        <Link to='Hone'>
+                        <Link to='Home'>
                             <img className='  card ' src={img5} alt="" />
                             <div className=' pl-5 pt-5  font-Sora'>
                                 <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
