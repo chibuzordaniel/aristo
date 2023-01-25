@@ -72,21 +72,21 @@ code {
 }
 
 .card{
-  border-top-left-radius: 200px ;
+  border-top-left-radius: 150px ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
   transition: 0.4s;
   width: 380px;
-  height: 300px;
+  height: 330px;
   text-align: center;
   font-size: 16px;
 }
 
 
 .card2{
-  border-top-left-radius: 200px  ;
-  border-bottom-right-radius: 200px  ;
+  border-top-left-radius: 150px  ;
+  border-bottom-right-radius: 150px  ;
   width: 380px;
-  height: 530px;
+  height: 100%;
   margin-bottom: 50px;
   background:#1A1405;
 }
