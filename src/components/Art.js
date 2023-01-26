@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import  img8 from '../assests/Group 7.png'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 import {AiOutlineSearch} from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 
 
@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom'
 const Art = () => {
 
     const [users, setUsers] = useState([])
+ 
 
     const fetchData = async () => {
       const response = await fetch("https://api.artic.edu/api/v1/artworks")
@@ -56,22 +57,13 @@ const Art = () => {
                             {users.map(user => (
                                 <li 
                                     className="card2  font-Sora   " key={user.id}> 
-                                    <Link to='Home'><img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" /></Link>
+                                    <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
                                     <div className="text-[24px] px-5  pt-10">{user.title} </div> 
                                     <div className=" pt-8  px-5 ">{user.updated_at}</div>
                                  </li>
                             ))}
                             </ul>
                         )}
-                        {/* <Link to='Home'>
-                            <img className='  card ' src={img5} alt="" />
-                            <div className=' pl-5 pt-5  font-Sora'>
-                                <h1 className=' text-[24px]'>Plastic Hears Sculpture</h1>
-                                <p className=' text-[17px] pt-7'>11- 12 November, 2021</p>
-                                <p className=' text-[17px] pt-2'>Galeri Salihara, Indonesia</p>
-                            </div>
-                       </Link>  */}
-                    
                 </div> 
             </div>
 

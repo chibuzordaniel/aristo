@@ -10,7 +10,6 @@ const Home = () => {
     
     return(
         <div className=' gradient h-[100%] pb-[48px]'>
-           
             <Aristonav/>
             <div className=' max-w-[1200px] mx-auto '>
                 <div className=' pt-[300px]'>
