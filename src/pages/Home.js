@@ -6,6 +6,7 @@ import Aristonav from '../components/Aristonav'
 import { Link } from 'react-router-dom'
 
 
+
 const Home = () => {
     
     return(

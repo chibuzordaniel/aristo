@@ -49,33 +49,27 @@ const Art = () => {
                     </div>
                 </div>
 
-
                 <div className=' '>
-
                         {users.length > 0 && (
                             <ul className=" mt-20  grid grid-cols-3 justify-between  text-white gap-7">
                             {users.map(user => (
                                 <li 
                                     className="card2  font-Sora   " key={user.id}> 
                                     <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
-                                    <div className="text-[24px] px-5  pt-10">{user.title} </div> 
-                                    <div className=" pt-8  px-5 ">{user.updated_at}</div>
+                                    <div className="text-[24px] px-5 font-bold  pt-10">{user.title} </div> 
+                                    <div className=" text-[18px] pt-8  px-5 ">{user.updated_at}</div>
+                                    <div className="text-[18px] pt-2  px-5 ">{user.artist_title}</div>
                                  </li>
                             ))}
                             </ul>
                         )}
                 </div> 
             </div>
-
-
             <div className='flex justify-center'>
-              
                 <div className=" bg-[#FBAF00] mt-[211px]     font-Sora  button2 relative w-[245px] h-[78px] ">
                     <button className=" button4 absolute bottom-3 outline-none  border-none  text-xl right-3  bg-white  w-[245px] h-[75px]"><HiOutlineArrowNarrowRight className=' absolute left-[200px] top-7  text-2xl'/>Explore arts</button>
-                   
                 </div>
             </div>
-
             <div>
                 <img className='  -mt-[510px]' src={img8} alt="" />
             </div>
