@@ -5,15 +5,10 @@ import {AiOutlineSearch} from 'react-icons/ai'
 // import { Link } from 'react-router-dom'
 
 
-
-
-
-
 const Art = () => {
 
     const [users, setUsers] = useState([])
  
-
     const fetchData = async () => {
       const response = await fetch("https://api.artic.edu/api/v1/artworks")
       const data = await response.json()
@@ -23,14 +18,13 @@ const Art = () => {
     useEffect(() => {
       fetchData()
     }, [])
-      console.log(users)
+    console.log(users)
 
     return(
         <div  className=' bg-[#110C00]'>
             <div className="max-w-[1200px] mx-auto ">
                 <div>
                     <div className=" flex justify-between text-white pt-[89px]">
-
                       <div>
                             <h1 className=" text-[40px] font-Sora ">Art in the collection</h1>
                             <p className=" text-[17px]  leading-[30px]">Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more</p>
