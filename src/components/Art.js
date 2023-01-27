@@ -2,17 +2,22 @@ import React, { useEffect, useState } from "react"
 import  img8 from '../assests/Group 7.png'
 import {HiOutlineArrowNarrowRight} from 'react-icons/hi'
 import {AiOutlineSearch} from 'react-icons/ai'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 const Art = () => {
 
     const [users, setUsers] = useState([])
- 
+   
+
     const fetchData = async () => {
-      const response = await fetch("https://api.artic.edu/api/v1/artworks")
-      const data = await response.json()
-      setUsers(data.data)
+    const response = await fetch("https://api.artic.edu/api/v1/artworks")
+    try{
+        const data = await response.json()
+        setUsers(data.data)
+     }catch{
+        console.log('error')
+     }
     }
   
     useEffect(() => {
@@ -27,17 +32,17 @@ const Art = () => {
                     <div className=" flex justify-between text-white pt-[89px]">
                       <div>
                             <h1 className=" text-[40px] font-Sora ">Art in the collection</h1>
-                            <p className=" text-[17px]  leading-[30px]">Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more</p>
+                            <p className=" text-[17px]  leading-7">Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more</p>
                       </div>
 
                       <div className=" flex w-[467px] h-[66px] bg-[#1A1405] rounded-[51px]  ">
                          <form className=' flex' action="">
                               <label htmlFor=" search">
                                     <span className="   pl-5">
-                                     < AiOutlineSearch className=" text-[#FBAF00] ml-[22px] w-[30px] h-[30px] -mt-0.5"/>
+                                     < AiOutlineSearch className=" text-[#FBAF00]  ml-5 w-[30px] h-[30px] -mt-0.5"/>
                                     </span>
                                 </label>
-                                <input   className=" w-[400px] h-[46px] pl-4 pt-[6px] font-Sora mt-2  outline-none border-none  bg-[#1A1405]" type="text" name="" id=" search" placeholder= "Search" />
+                                <input   className=" w-[400px] h-[46px] pl-4  pt-1.5 font-Sora mt-2  outline-none border-none  bg-[#1A1405]" type="text" name="" id=" search" placeholder= "Search" />
                           </form>
                       </div>
                     </div>
@@ -47,13 +52,12 @@ const Art = () => {
                         {users.length > 0 && (
                             <ul className=" mt-20  grid grid-cols-3 justify-between  text-white gap-7">
                             {users.map(user => (
-                                <li 
-                                    className="card2  font-Sora   " key={user.id}> 
+                                <Link to={`/art/details/${user.id}/${user.image_id}`} className="card2  font-Sora   " key={user.id}> 
                                     <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
-                                    <div className="text-[24px] px-5 font-bold  pt-10">{user.title} </div> 
-                                    <div className=" text-[18px] pt-8  px-5 ">{user.updated_at}</div>
-                                    <div className="text-[18px] pt-2  px-5 ">{user.artist_title}</div>
-                                 </li>
+                                    <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 
+                                    <div className="  text-lg pt-8  px-5 ">{user.updated_at}</div>
+                                    <div className=" text-lg  pt-2  px-5 ">{user.artist_title}</div>
+                                </Link>
                             ))}
                             </ul>
                         )}

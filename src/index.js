@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import  Home from './pages/Home'
+import ArtDetails from './pages/ArtDetails'
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "Home",
-    element: <Home/>,
+    path: "/art/details/:artId/:imgId",
+    element: <ArtDetails/>,
   },
 
  

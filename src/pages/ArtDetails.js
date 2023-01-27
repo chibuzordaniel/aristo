@@ -1,14 +1,36 @@
-import React from 'react'
+import {useEffect, useState} from 'react'
 import {HiOutlineArrowNarrowLeft,  HiOutlineShare} from 'react-icons/hi'
-import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
+// import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
 import  img3 from  '../assests/Group 8.png'
 import Aristonav from '../components/Aristonav'
-import { Link } from 'react-router-dom'
+import { Link, useParams} from 'react-router-dom'
+
 
 
 
 const Home = () => {
-    
+  const [users, setUsers] = useState([])
+  const {artId,imgId } = useParams()
+
+  
+  const fetchData = async () => {
+    const response = await fetch(`https://api.artic.edu/api/v1/artworks/${artId}`)
+    try{
+        const data = await response.json()
+        setUsers(data.data)
+     }catch{
+        console.log('error')
+     }
+    }
+  
+    useEffect(() => {
+      fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [artId])
+
+
+     console.log(users)
+
     return(
         <div className=' gradient h-[100%] pb-[48px]'>
             <Aristonav/>
@@ -28,11 +50,12 @@ const Home = () => {
 
                 <div className=' flex gap-[54px] mt-[57px]'>
                     <div>
-                        <img className='card8 ' src={img1} alt="" />
+                      
+                        <img className="card8"  src={`https://www.artic.edu/iiif/2/${imgId}/full/330,/0/default.jpg`} alt=" art" />
                     </div>
 
                     <div>
-                        <h1 className=' text-white text-[32px] font-Sora'>Plastic Hears Sculpture</h1>
+                        <h1 className=' text-white text-[32px] font-Sora'>{users.title}</h1>
                         <p className='  text-white text-[17px] pt-5 font-Sora'>Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more. Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings,  <br /> and many moreBrowse a curated selection of art around the <br /> world, including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
 
                        <div className=' flex mt-[185px] gap-[50px]'>
