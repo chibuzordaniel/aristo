@@ -35,9 +35,8 @@ const Home = () => {
         <div className=' gradient h-[100%] pb-[48px]'>
             <Aristonav/>
             <div className=' max-w-[1200px] mx-auto '>
-                <div className=' pt-[300px]'>
+              <div className=' pt-[180px]'>
                 <div className=' flex justify-between'>
-    
                     <div>
                       <Link to='/'> <HiOutlineArrowNarrowLeft className=' text-white text-[35px]'/></Link>
                     </div>
@@ -55,7 +54,7 @@ const Home = () => {
                     </div>
 
                     <div>
-                        <h1 className=' text-white text-[32px] font-Sora'>{users.title}</h1>
+                        <h1 className=' text-white text-[32px]  w-[500px] font-Sora'>{users.title}</h1>
                         <p className='  text-white text-[17px] pt-5 font-Sora'>Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more. Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings,  <br /> and many moreBrowse a curated selection of art around the <br /> world, including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
 
                        <div className=' flex mt-[185px] gap-[50px]'>
@@ -73,7 +72,7 @@ const Home = () => {
           </div>
 
             <div className='   flex justify-end  '>
-                <img className=' absolute top-[340px]  ' src={img3} alt="" />
+                <img className=' absolute top-[220px]  ' src={img3} alt="" />
             </div>
         </div>
     )
