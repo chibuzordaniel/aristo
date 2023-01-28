@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {useEffect, useState} from 'react'
 import {HiOutlineArrowNarrowLeft,  HiOutlineShare} from 'react-icons/hi'
 // import  img1 from '../assests/levi-meir-clancy-h2UcC6lXlJs-unsplash 2.png'
@@ -10,7 +11,7 @@ import { Link, useParams} from 'react-router-dom'
 
 const Home = () => {
   const [users, setUsers] = useState([])
-  const {artId,imgId } = useParams()
+  const {artId, imgId} = useParams()
 
   
   const fetchData = async () => {
@@ -25,7 +26,7 @@ const Home = () => {
   
     useEffect(() => {
       fetchData()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+   
     }, [artId])
 
 
@@ -49,21 +50,21 @@ const Home = () => {
 
                 <div className=' flex gap-[54px] mt-[57px]'>
                     <div>
-                      
-                        <img className="card8"  src={`https://www.artic.edu/iiif/2/${imgId}/full/330,/0/default.jpg`} alt=" art" />
+                        <img className="card8"  src={`https://www.artic.edu/iiif/2/${imgId}/full/843,/0/default.jpg`}  alt="art" />
                     </div>
 
                     <div>
                         <h1 className=' text-white text-[32px]  w-[500px] font-Sora'>{users.title}</h1>
-                        <p className='  text-white text-[17px] pt-5 font-Sora'>Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more. Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings,  <br /> and many moreBrowse a curated selection of art around the <br /> world, including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
+                        <p className='  text-white text-[17px] pt-5 font-Sora'>{users.updated_at}</p>
+                        <p className='  text-white text-[17px] pt-5 font-Sora'>{users.artist_title}</p>
 
-                       <div className=' flex mt-[185px] gap-[50px]'>
-                           <div className="  hover:bg-[#FBAF00]   button2 relative w-[164px] h-[61px] ">
+                       <div className=' flex  gap-4 mt-48 '>
+                           <div className="  hover:bg-[#FBAF00] mt-1   button2 relative w-[164px] h-[61px] ">
                                 <button className=" button4 absolute bottom-2 font-Sora  outline-none border-none text-white hover:text-black text-xl right-1  hover:bg-white  w-[164px] h-[61px]" >Explore arts</button>
                             </div>
 
-                            <div className=' hover:bg-white   button2 relative w-[164px] h-[61px] '>
-                              <button className=" text-white font-Sora text-xl pt-2 hover:text-black button4 absolute bottom-2 outline-none border-none hover:bg-[#FBAF00]  right-1  w-[164px] h-[61px] " >Explore arts</button>
+                            <div className='  hover:bg-white   button2 relative w-[164px] h-[61px] '>
+                              <button className=" text-white font-Sora text-xl pt-2 hover:bg-[#FBAF00]  hover:text-black button4 absolute bottom-2 outline-none border-none   right-1  w-[164px] h-[61px] " >Explore arts</button>
                             </div>
                        </div>
                     </div>

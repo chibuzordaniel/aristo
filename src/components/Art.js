@@ -15,7 +15,8 @@ const Art = () => {
     try{
         const data = await response.json()
         setUsers(data.data)
-     }catch{
+     }
+     catch{
         console.log('error')
      }
     }
@@ -29,7 +30,7 @@ const Art = () => {
         <div  className=' bg-[#110C00]'>
             <div className="max-w-[1200px] mx-auto ">
                 <div>
-                    <div className=" flex justify-between text-white pt-[89px]">
+                    <div className=" flex  justify-between text-white pt-[89px]">
                       <div>
                             <h1 className=" text-[40px] font-Sora ">Art in the collection</h1>
                             <p className=" text-[17px]  leading-7">Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more</p>
@@ -51,14 +52,14 @@ const Art = () => {
                 <div className=' '>
                         {users.length > 0 && (
                             <ul className=" mt-20  grid grid-cols-3 justify-between  text-white gap-7">
-                            {users.map(user => (
-                                <Link to={`/art/details/${user.id}/${user.image_id}`} className="card2  font-Sora   " key={user.id}> 
-                                    <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
-                                    <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 
-                                    <div className="  text-lg pt-8  px-5 ">{user.updated_at}</div>
-                                    <div className=" text-lg  pt-2  px-5 ">{user.artist_title}</div>
-                                </Link>
-                            ))}
+                                {users.map(user => (
+                                    <Link to={`/art/details/${user.id}/${user.image_id}`} className="card2  font-Sora" key={user.id}> 
+                                        <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
+                                        <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 
+                                        <div className="  text-lg pt-8  px-5 ">{user.updated_at}</div>
+                                        <div className=" text-lg  pt-2  px-5 ">{user.artist_title}</div>
+                                    </Link>
+                                ))}
                             </ul>
                         )}
                 </div> 

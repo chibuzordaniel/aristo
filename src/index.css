@@ -100,10 +100,11 @@ code {
 .card8{
   border-top-left-radius: 200px  ;
   border-bottom-right-radius: 200px  ;
-  width: 380px;
+  width: 430px;
   height: 530px;
   margin-bottom: 50px;
   background:#1A1405;
+  object-fit: cover;
 }
 
 
