@@ -14,13 +14,13 @@ const Showcase = () => {
                     <div>
                         <h1 className=" font-Sora text-[60px] leading-[72px] text-white">Discover amazing <br /> art around the <br /> <span className=" text-[#FBAF00]">world</span> </h1>
                         <p className=" pt-11 text-[20px] leading-[30px] text-white">Browse a curated selection of art around the world, <br /> including museum exhibitions, gallery openings, <br /> upcoming and many more</p>
-                        <div className=" bg-[#FBAF00] mt-[64px]  font-Sora  button2 relative w-[164px] h-[61px] ">
-                          <button className=" button4 absolute bottom-2 outline-none  border-none  text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
+                        <div className=" bg-[#FBAF00] hover:bg-white mt-[64px]  font-Sora  rounded-tr-[30px] rounded-bl-[30px] relative w-[164px] h-[61px] ">
+                          <button className=" hover:bg-[#FBAF00]  hover:text-white rounded-bl-[30px] rounded-tr-[30px] absolute bottom-2 outline-none  border-none  text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
                         </div>
                     </div>
 
-                    <div className='   relative bg-[#FBAF00]  mt-7   img1 '> 
-                        <img className='img1  right-5 relative bottom-5  w-[400px]' src={img1} alt="" />
+                    <div className='   relative bg-[#FBAF00]  mt-7  rounded-bl-[200px]  rounded-tr-[200px]  '> 
+                        <img className=' rounded-bl-[200px]  rounded-tr-[200px] right-5 relative bottom-5  w-[400px]' src={img1} alt="" />
                     </div>
                 
                 </div>

@@ -25,94 +25,27 @@ code {
     monospace;
 }
 
-.button1{
-  border-radius: 0px 30px;
-
-}
-
-.button1:hover{
-  background: #FBAF00;
-  color: black;
-}
-
-
-.button4{
-  border-radius: 0px 30px 
-}
-
-.button4:hover{
-  background:#FBAF00;
-  color: black;
-}
 
 
 
-.button2{
-  border-radius: 0px 30px 
-}
 
 
-.button2:hover{
-  background: white;
-  color: black;
-}
-
-.button3{
-  border-radius: 0px 30px;
-
-}
-
-.button3:hover{
-  background: white;
-  color: black;
-}
-
-.img1{
-  border-radius: 20px 200px;
-}
-
-.card{
-  border-top-left-radius: 150px ;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
-  transition: 0.4s;
-  width: 380px;
-  height: 330px;
-  text-align: center;
-  font-size: 16px;
-  object-fit: cover;
-}
 
 
-.card2{
-  border-top-left-radius: 150px  ;
-  border-bottom-right-radius: 150px  ;
-  width: 380px;
-  height: 100%;
-  margin-bottom: 50px;
-  background:#1A1405;
-}
 
 
-.art2{
-  border-radius:  20px  200px ;
-}
-
-.card8{
-  border-top-left-radius: 200px  ;
-  border-bottom-right-radius: 200px  ;
-  width: 430px;
-  height: 530px;
-  margin-bottom: 50px;
-  background:#1A1405;
-  object-fit: cover;
-}
 
 
-.gradient{
-  background: rgba(17, 12, 0, 1);
-  background:linear-gradient(  to top right, rgb(144, 102, 4) ,rgba(17, 12, 0, 1) ,rgba(17, 12, 0, 1) ,rgba(17, 12, 0, 1));
 
-}
+
+
+
+
+
+
+
+
+
 
 
 

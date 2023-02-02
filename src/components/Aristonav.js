@@ -29,12 +29,12 @@ const Aristonav = () => {
                         </div>
 
                         <div className=" flex gap-10  mt-8 font-Sora ">
-                            <div className="   bg-white button1 relative w-[164px] h-[61px] ">
-                               <button className=" button3 text-white outline-none border-none text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
+                            <div className="  hover:bg-[#FBAF00]   bg-white rounded-tr-[30px] rounded-bl-[30px]  relative w-[164px] h-[61px] ">
+                               <button className="  hover:bg-white hover:text-black rounded-bl-[30px] rounded-tr-[30px]  text-white outline-none border-none text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
                             </div>
                             
-                            <div className=" bg-[#FBAF00]   button2 relative w-[164px] h-[61px] ">
-                               <button className=" button4 absolute bottom-2  outline-none border-none text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
+                            <div className=" bg-[#FBAF00] hover:bg-white  rounded-tr-[30px] rounded-bl-[30px]  relative w-[164px] h-[61px] ">
+                               <button className="  hover:bg-[#FBAF00] hover:text-white rounded-bl-[30px] rounded-tr-[30px] absolute bottom-2  outline-none border-none text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
                             </div>
                         </div> 
                   </div>

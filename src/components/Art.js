@@ -53,8 +53,8 @@ const Art = () => {
                         {users.length > 0 && (
                             <ul className=" mt-20  grid grid-cols-3 justify-between  text-white gap-7">
                                 {users.map(user => (
-                                    <Link to={`/art/details/${user.id}/${user.image_id}`} className="card2  font-Sora" key={user.id}> 
-                                        <img className="card"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
+                                    <Link to={`/art/details/${user.id}/${user.image_id}`} className=" rounded-tl-[150px]  rounded-br-[150px]  bg-[#1A1405]  w-[380ppx] h-[100%] mb-9 font-Sora" key={user.id}> 
+                                        <img className=" rounded-tl-[150px]  w-[100%] h-[330px] object-cover"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
                                         <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 
                                         <div className="  text-lg pt-8  px-5 ">{user.updated_at}</div>
                                         <div className=" text-lg  pt-2  px-5 ">{user.artist_title}</div>
@@ -65,8 +65,10 @@ const Art = () => {
                 </div> 
             </div>
             <div className='flex justify-center'>
-                <div className=" bg-[#FBAF00] mt-[211px]     font-Sora  button2 relative w-[245px] h-[78px] ">
-                    <button className=" button4 absolute bottom-3 outline-none  border-none  text-xl right-3  bg-white  w-[245px] h-[75px]"><HiOutlineArrowNarrowRight className=' absolute left-[200px] top-7  text-2xl'/>Explore arts</button>
+                <div>
+                <div className=" bg-[#FBAF00] hover:bg-white mt-[211px] font-Sora  rounded-tr-[30px] rounded-bl-[30px] relative w-[245px] h-[78px] ">
+                    <button className=" hover:bg-[#FBAF00] hover:text-white rounded-bl-[30px] rounded-tr-[30px] absolute bottom-3 outline-none  border-none  text-xl right-3  bg-white  w-[245px] h-[75px]"><HiOutlineArrowNarrowRight className=' absolute left-[200px] top-7  text-2xl'/>Explore arts</button>
+                </div>
                 </div>
             </div>
             <div>
