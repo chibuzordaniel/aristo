@@ -56,8 +56,8 @@ const Art = () => {
                                     <Link to={`/art/details/${user.id}/${user.image_id}`} className=" rounded-tl-[150px]  rounded-br-[150px]  bg-[#1A1405]  w-[380ppx] h-[100%] mb-9 font-Sora" key={user.id}> 
                                         <img className=" rounded-tl-[150px]  w-[100%] h-[330px] object-cover"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
                                         <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 
-                                        <div className="  text-lg pt-8  px-5 ">{user.updated_at}</div>
-                                        <div className=" text-lg  pt-2  px-5 ">{user.artist_title}</div>
+                                        <div className="  text-lg pt-8  px-5 ">{user.date_start}  -  {user.date_end}</div>
+                                        <div className=" text-lg  pt-2  px-5 w-[330px] ">{user.artist_display}</div>
                                     </Link>
                                 ))}
                             </ul>

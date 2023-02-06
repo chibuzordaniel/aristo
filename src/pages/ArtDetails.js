@@ -53,9 +53,9 @@ const Home = () => {
 
                     <div>
                       <h1 className=' text-white text-[32px]  w-[700px] font-Sora'>{users.title}</h1>
-                      <p className='  text-white text-[17px] pt-5 font-Sora'>{users.updated_at}</p>
-                      <p className='  text-white text-[17px] pt-5 font-Sora'>{users.artist_title}</p>
-
+                      <p className='  text-white text-[17px] pt-5 font-Sora'>{users.date_start}  -  {users.date_end}</p>
+                      <p className='  text-white text-[17px] w-[380px] pt-5 font-Sora'>{users.artist_display}</p>
+                    
                       <div className=' flex  gap-4 mt-48 '>
                         <div className="  hover:bg-[#FBAF00] mt-1 rounded-tr-[30px] rounded-bl-[30px]   relative w-[164px] h-[61px] ">
                           <button className=" rounded-bl-[30px] rounded-tr-[30px]  absolute bottom-2 font-Sora  outline-none border-none text-white hover:text-black text-xl right-1  hover:bg-white  w-[164px] h-[61px]" >Explore arts</button>
