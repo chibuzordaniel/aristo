@@ -43,7 +43,7 @@ const Art = () => {
                                      < AiOutlineSearch className=" text-[#FBAF00]  ml-5 w-[30px] h-[30px] -mt-0.5"/>
                                     </span>
                                 </label>
-                                <input   className=" w-[400px] h-[46px] pl-4  pt-1.5 font-Sora mt-2  outline-none border-none  bg-[#1A1405]" type="text" name="" id=" search" placeholder= "Search" />
+                                <input   className=" w-[400px] h-[46px] pl-4  pt-1.5 font-Sora mt-2  outline-none border-none   bg-[#1A1405]" type="text" name="" id=" search" placeholder= "Search" />
                           </form>
                       </div>
                     </div>
