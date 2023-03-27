@@ -26,6 +26,9 @@ const Art = () => {
     }, [])
     console.log(users)
 
+
+    
+
     return(
         <div  className=' bg-[#110C00]'>
             <div className="max-w-[1200px] mx-auto ">
