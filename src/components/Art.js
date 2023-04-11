@@ -39,7 +39,7 @@ const Art = () => {
                             <p className=" text-[17px]  leading-7 lg:pl-0 sm:pl-10">Browse a curated selection of art around the world, including <br /> museum exhibitions, gallery openings, upcoming and many <br /> more</p>
                       </div>
 
-                      <div className=" flex w-[467px] h-[66px] bg-[#1A1405] rounded-[51px] lg:ml-0 lg:mt-0  sm:mt-14 sm:ml-10 ">
+                      <div className=" flex lg:w-[467px] h-[66px] bg-[#1A1405] rounded-[51px] lg:ml-0 lg:mt-0  sm:mt-14 sm:ml-10  sm:w-[515px]">
                          <form className=' flex' action="">
                               <label htmlFor=" search">
                                     <span className="   pl-5">
@@ -56,7 +56,7 @@ const Art = () => {
                         {users.length > 0 && (
                             <ul className=" mt-20  lg:grid grid-cols-3 justify-between   text-white gap-7 sm:block sm:ml-10 ">
                                 {users.map(user => (
-                                    <div className=" rounded-t-[150px]  rounded-br-[150px]  bg-[#1A1405]  lg:w-[380px] h-[100%] mb-9 font-Sora sm:w-[515px]  sm:pb-10 ">
+                                    <div className=" rounded-tl-[150px]  rounded-br-[150px]  bg-[#1A1405]  lg:w-[380px] h-[100%] mb-9 font-Sora sm:w-[515px]  sm:pb-10 ">
                                         <Link to={`/art/details/${user.id}/${user.image_id}`}  key={user.id}> 
                                             <img className=" rounded-tl-[150px]  w-[100%] h-[330px] object-cover"  src={`https://www.artic.edu/iiif/2/${user?.image_id}/full/330,/0/default.jpg`} alt=" art" />
                                             <div className=" text-2xl px-5 font-bold  pt-10">{user.title} </div> 

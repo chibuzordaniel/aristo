@@ -46,7 +46,7 @@ const Aristonav = () => {
                                 { !nav ? <IoAppsSharp className=' lg:w-7 text-white lg:h-6  sm:w-10 sm:h-7 sm:mt-4 dark:text-[#FAF9F8]'/> : <HiXMark className=' w-7 h-6 mt-1 text-white dark:text-[#FAF9F8]'/>  }
                             </div>
 
-                           <div className={!nav ? 'hidden' :  ' border-t-2 absolute  right-4 top-20  pt-4 pl-5 bg-white h-[200px] w-40  gap-[53px] dark:bg-[#17234f] shadow-xl dark:text-[#FAF9F8] '}>
+                           <div className={!nav ? 'hidden' :  ' border-t-2 absolute  right-4 top-20  pt-4 pl-5 bg-white h-[400px] w-[250px]  gap-[53px] dark:bg-[#17234f] shadow-xl dark:text-[#FAF9F8] '}>
                                 <div className="  pt-11 text-base gap-12  font-Sora ">
                                     <p>Events</p>
                                     <p>Museum</p>
@@ -54,12 +54,12 @@ const Aristonav = () => {
                                     <p>Gallaries</p>
                                 </div>
 
-                                <div className="  gap-10  mt-8 font-Sora ">
+                                <div className="   gap-10  mt-8 font-Sora ">
                                     <div className="  hover:bg-[#FBAF00]   bg-white rounded-tr-[30px] rounded-bl-[30px]  relative w-[164px] h-[61px] ">
                                     <button className="  hover:bg-white hover:text-black rounded-bl-[30px] rounded-tr-[30px]  text-white outline-none border-none text-xl absolute bottom-2  right-1  bg-[#FBAF00] w-[164px] h-[61px]" >Login</button>
                                     </div>
                                     
-                                    <div className=" bg-[#FBAF00] hover:bg-white  rounded-tr-[30px] rounded-bl-[30px]  relative w-[164px] h-[61px] ">
+                                    <div className=" bg-[#FBAF00] hover:bg-white  mt-8 rounded-tr-[30px] rounded-bl-[30px]  relative w-[164px] h-[61px] ">
                                     <button className="  hover:bg-[#FBAF00] hover:text-white rounded-bl-[30px] rounded-tr-[30px] absolute bottom-2  outline-none border-none text-xl right-1  bg-white  w-[164px] h-[61px]" >Explore arts</button>
                                     </div>
                                 </div> 
